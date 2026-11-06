@@ -1,0 +1,20 @@
+{
+  "name": "monopoly-napoli-online",
+  "version": "1.0.0",
+  "description": "Monopoly: Napoli — 3D-игра и онлайн-сервер (Node.js + Express + Socket.IO), один сервис на Render",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "node -e \"try{require('fs').copyFileSync('node_modules/three/build/three.min.js','public/three.min.js')}catch(e){console.warn('three.min.js не скопирован:',e.message)}\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5",
+    "three": "0.128.0"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
